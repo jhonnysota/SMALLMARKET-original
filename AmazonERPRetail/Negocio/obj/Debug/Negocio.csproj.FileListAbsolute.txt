@@ -1,0 +1,14 @@
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Negocio.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Negocio.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\AccesoDatos.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Entidades.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Infraestructura.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\itextsharp.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\AccesoDatos.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Entidades.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\Infraestructura.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\bin\Debug\en\Infraestructura.resources.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\obj\Debug\Negocio.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Negocio\obj\Debug\Negocio.pdb

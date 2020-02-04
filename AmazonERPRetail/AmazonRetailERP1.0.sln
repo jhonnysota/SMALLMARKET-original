@@ -1,0 +1,140 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 BackEnd", "01 BackEnd", "{AEA43E49-E09C-42CE-AC64-01C5A85E3C6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Transversal", "02 Transversal", "{4202905F-703C-4085-89FF-AC4FF82524B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Servicios", "03 Servicios", "{C16BD565-43FB-4286-8200-DE751C4F3766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Cliente", "04 Cliente", "{BAF4B4BA-921C-47AE-AC90-C827DC3E9811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{85C9D928-25AF-4552-BBB7-7C0EB215D635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D13A126E-5572-4848-841A-0DFBE944AD4F} = {D13A126E-5572-4848-841A-0DFBE944AD4F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructura", "Infraestructura\Infraestructura.csproj", "{D13A126E-5572-4848-841A-0DFBE944AD4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoWCF", "ContratoWCF\ContratoWCF.csproj", "{5F705123-8947-4FBF-8690-733781F2BFBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioWCF", "ServicioWCF\ServicioWCF.csproj", "{D3B47EFB-DF84-42CB-828E-533418219C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostIISWCF", "HostIISWCF\HostIISWCF.csproj", "{1E72939D-3221-4CCD-B913-FD703A6396E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteWinForm", "ClienteWinForm\ClienteWinForm.csproj", "{AB07CEE3-F352-4043-991C-C795CBFC2828}"
+	ProjectSection(ProjectDependencies) = postProject
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635} = {85C9D928-25AF-4552-BBB7-7C0EB215D635}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentadora", "Presentadora\Presentadora.csproj", "{CCA37C81-530C-42E8-977A-E1E1D88C9093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D13A126E-5572-4848-841A-0DFBE944AD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D13A126E-5572-4848-841A-0DFBE944AD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D13A126E-5572-4848-841A-0DFBE944AD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D13A126E-5572-4848-841A-0DFBE944AD4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F705123-8947-4FBF-8690-733781F2BFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F705123-8947-4FBF-8690-733781F2BFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F705123-8947-4FBF-8690-733781F2BFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F705123-8947-4FBF-8690-733781F2BFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B47EFB-DF84-42CB-828E-533418219C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B47EFB-DF84-42CB-828E-533418219C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B47EFB-DF84-42CB-828E-533418219C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B47EFB-DF84-42CB-828E-533418219C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E72939D-3221-4CCD-B913-FD703A6396E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E72939D-3221-4CCD-B913-FD703A6396E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E72939D-3221-4CCD-B913-FD703A6396E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E72939D-3221-4CCD-B913-FD703A6396E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB07CEE3-F352-4043-991C-C795CBFC2828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB07CEE3-F352-4043-991C-C795CBFC2828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB07CEE3-F352-4043-991C-C795CBFC2828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB07CEE3-F352-4043-991C-C795CBFC2828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA37C81-530C-42E8-977A-E1E1D88C9093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA37C81-530C-42E8-977A-E1E1D88C9093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA37C81-530C-42E8-977A-E1E1D88C9093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA37C81-530C-42E8-977A-E1E1D88C9093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83FD54CA-EA41-4BD4-B797-BEA09F62D16D} = {AEA43E49-E09C-42CE-AC64-01C5A85E3C6A}
+		{85C9D928-25AF-4552-BBB7-7C0EB215D635} = {AEA43E49-E09C-42CE-AC64-01C5A85E3C6A}
+		{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA} = {4202905F-703C-4085-89FF-AC4FF82524B1}
+		{D13A126E-5572-4848-841A-0DFBE944AD4F} = {4202905F-703C-4085-89FF-AC4FF82524B1}
+		{5F705123-8947-4FBF-8690-733781F2BFBC} = {C16BD565-43FB-4286-8200-DE751C4F3766}
+		{D3B47EFB-DF84-42CB-828E-533418219C85} = {C16BD565-43FB-4286-8200-DE751C4F3766}
+		{1E72939D-3221-4CCD-B913-FD703A6396E1} = {C16BD565-43FB-4286-8200-DE751C4F3766}
+		{AB07CEE3-F352-4043-991C-C795CBFC2828} = {BAF4B4BA-921C-47AE-AC90-C827DC3E9811}
+		{CCA37C81-530C-42E8-977A-E1E1D88C9093} = {BAF4B4BA-921C-47AE-AC90-C827DC3E9811}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD362679-A102-437F-83ED-C410B823388C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/amazontic
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AccesoDatos\\AccesoDatos.csproj
+		SccProjectTopLevelParentUniqueName1 = AmazonRetailERP1.0.sln
+		SccProjectName1 = AccesoDatos
+		SccLocalPath1 = AccesoDatos
+		SccProjectUniqueName2 = ClienteWinForm\\ClienteWinForm.csproj
+		SccProjectTopLevelParentUniqueName2 = AmazonRetailERP1.0.sln
+		SccProjectName2 = ClienteWinForm
+		SccLocalPath2 = ClienteWinForm
+		SccProjectUniqueName3 = ContratoWCF\\ContratoWCF.csproj
+		SccProjectTopLevelParentUniqueName3 = AmazonRetailERP1.0.sln
+		SccProjectName3 = ContratoWCF
+		SccLocalPath3 = ContratoWCF
+		SccProjectUniqueName4 = Entidades\\Entidades.csproj
+		SccProjectTopLevelParentUniqueName4 = AmazonRetailERP1.0.sln
+		SccProjectName4 = Entidades
+		SccLocalPath4 = Entidades
+		SccProjectUniqueName5 = HostIISWCF\\HostIISWCF.csproj
+		SccProjectTopLevelParentUniqueName5 = AmazonRetailERP1.0.sln
+		SccProjectName5 = HostIISWCF
+		SccLocalPath5 = HostIISWCF
+		SccProjectUniqueName6 = Infraestructura\\Infraestructura.csproj
+		SccProjectTopLevelParentUniqueName6 = AmazonRetailERP1.0.sln
+		SccProjectName6 = Infraestructura
+		SccLocalPath6 = Infraestructura
+		SccProjectUniqueName7 = Negocio\\Negocio.csproj
+		SccProjectTopLevelParentUniqueName7 = AmazonRetailERP1.0.sln
+		SccProjectName7 = Negocio
+		SccLocalPath7 = Negocio
+		SccProjectUniqueName8 = Presentadora\\Presentadora.csproj
+		SccProjectTopLevelParentUniqueName8 = AmazonRetailERP1.0.sln
+		SccProjectName8 = Presentadora
+		SccLocalPath8 = Presentadora
+		SccProjectUniqueName9 = ServicioWCF\\ServicioWCF.csproj
+		SccProjectTopLevelParentUniqueName9 = AmazonRetailERP1.0.sln
+		SccProjectName9 = ServicioWCF
+		SccLocalPath9 = ServicioWCF
+	EndGlobalSection
+EndGlobal

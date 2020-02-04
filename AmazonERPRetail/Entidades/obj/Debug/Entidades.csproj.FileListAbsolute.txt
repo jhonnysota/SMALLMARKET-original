@@ -1,0 +1,5 @@
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Entidades\bin\Debug\Entidades.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Entidades\bin\Debug\Entidades.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Entidades\obj\Debug\Entidades.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Entidades\obj\Debug\Entidades.pdb

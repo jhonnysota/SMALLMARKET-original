@@ -1,0 +1,12 @@
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\ContratoWCF.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\ContratoWCF.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\Entidades.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\Infraestructura.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\itextsharp.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\Entidades.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\Infraestructura.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\bin\Debug\en\Infraestructura.resources.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\obj\Debug\ContratoWCF.csprojAssemblyReference.cache
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\obj\Debug\ContratoWCF.csproj.CopyComplete
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\obj\Debug\ContratoWCF.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\ContratoWCF\obj\Debug\ContratoWCF.pdb

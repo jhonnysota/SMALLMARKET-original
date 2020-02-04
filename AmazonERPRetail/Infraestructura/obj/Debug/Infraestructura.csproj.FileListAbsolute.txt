@@ -1,0 +1,16 @@
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\Infraestructura.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\Infraestructura.pdb
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\en\Infraestructura.resources.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\HtmlAgilityPack.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\itextsharp.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\itextsharp.pdfa.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\bin\Debug\itextsharp.xtra.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.csprojAssemblyReference.cache
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.Recursos.Mensajes.resources
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.Winform.Master.resources
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.Recursos.Mensajes.en.resources
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.csproj.GenerateResource.cache
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\en\Infraestructura.resources.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.csproj.CopyComplete
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.dll
+D:\AMAZONTIC RETAIL\AmazonERPRetail\Infraestructura\obj\Debug\Infraestructura.pdb

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83FD54CA-EA41-4BD4-B797-BEA09F62D16D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccesoDatos</RootNamespace>
+    <AssemblyName>AccesoDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\AlmacenAD.cs" />
+    <Compile Include="Almacen\AlmacenArticuloLoteAD.cs" />
+    <Compile Include="Almacen\ArticuloPrecioAD.cs" />
+    <Compile Include="Almacen\ConceptosVariosAD.cs" />
+    <Compile Include="Almacen\CorrelativoAD.cs" />
+    <Compile Include="Almacen\GastosImportacionAD.cs" />
+    <Compile Include="Almacen\HojaCostoAD.cs" />
+    <Compile Include="Almacen\HojaCostoAlmacenAD.cs" />
+    <Compile Include="Almacen\HojaCostoItemAD.cs" />
+    <Compile Include="Almacen\HojaCostoOCAD.cs" />
+    <Compile Include="Almacen\kardexAD.cs" />
+    <Compile Include="Almacen\KardexValorizadoAD.cs" />
+    <Compile Include="Almacen\kardexXLSAD.cs" />
+    <Compile Include="Almacen\LoteAD.cs" />
+    <Compile Include="Almacen\MovimientoAlmacenAD.cs" />
+    <Compile Include="Almacen\MovimientoAlmacenItemAD.cs" />
+    <Compile Include="Almacen\OperacionAD.cs" />
+    <Compile Include="Almacen\OrdenCompraAD.cs" />
+    <Compile Include="Almacen\OrdenCompraDistriAD.cs" />
+    <Compile Include="Almacen\OrdenCompraItemAD.cs" />
+    <Compile Include="Almacen\OrdenCompraParamAD.cs" />
+    <Compile Include="Almacen\OrdenConversionAD.cs" />
+    <Compile Include="Almacen\OrdenConversionDetalleAD.cs" />
+    <Compile Include="Almacen\OrdenConversionGastosAD.cs" />
+    <Compile Include="Almacen\OrdenConversionSalidaAD.cs" />
+    <Compile Include="Almacen\PeriodosAlmAD.cs" />
+    <Compile Include="Almacen\ProcesoValorizaciondeAlmacenAD.cs" />
+    <Compile Include="Almacen\RequerimientoPuntosAD.cs" />
+    <Compile Include="Almacen\RequerimientosAD.cs" />
+    <Compile Include="Almacen\RequerimientosItemAD.cs" />
+    <Compile Include="Almacen\RequisicionAD.cs" />
+    <Compile Include="Almacen\RequisicionItemAD.cs" />
+    <Compile Include="Almacen\RequisicionProveedorAD.cs" />
+    <Compile Include="Almacen\StockAD.cs" />
+    <Compile Include="Contabilidad\ActivacionAD.cs" />
+    <Compile Include="Contabilidad\ActivacionDetAD.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionAD.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionSunatAD.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionXLSAD.cs" />
+    <Compile Include="Contabilidad\BancosConciliarAD.cs" />
+    <Compile Include="Contabilidad\CierreAlmacenAD.cs" />
+    <Compile Include="Contabilidad\CierreCuentaAD.cs" />
+    <Compile Include="Contabilidad\CierreSistemaAD.cs" />
+    <Compile Include="Contabilidad\ComprasFileAD.cs" />
+    <Compile Include="Contabilidad\ComprasVariasAD.cs" />
+    <Compile Include="Contabilidad\ComprobantesAD.cs" />
+    <Compile Include="Contabilidad\ComprobantesFileAD.cs" />
+    <Compile Include="Contabilidad\ConceptoGastoAD.cs" />
+    <Compile Include="Contabilidad\ConciliadoDcmtoPendienteAD.cs" />
+    <Compile Include="Contabilidad\conCtaCte14AD.cs" />
+    <Compile Include="Contabilidad\conCtaCteAD.cs" />
+    <Compile Include="Contabilidad\conCtaCteItemAD.cs" />
+    <Compile Include="Contabilidad\ConsistenciaVoucherAD.cs" />
+    <Compile Include="Contabilidad\Con_SaldosAD.cs" />
+    <Compile Include="Contabilidad\Con_SaldosCostosAD.cs" />
+    <Compile Include="Contabilidad\CostoVentaAD.cs" />
+    <Compile Include="Contabilidad\CuentaCCostoAD.cs" />
+    <Compile Include="Contabilidad\CuentasMigracionAD.cs" />
+    <Compile Include="Contabilidad\CuentaTasaRentaAD.cs" />
+    <Compile Include="Contabilidad\DatosAuditoriaAD.cs" />
+    <Compile Include="Contabilidad\DifCambioAD.cs" />
+    <Compile Include="Contabilidad\DisFactorAD.cs" />
+    <Compile Include="Contabilidad\EEFFAD.cs" />
+    <Compile Include="Contabilidad\EEFFItemAD.cs" />
+    <Compile Include="Contabilidad\EEFFItemCtaAD.cs" />
+    <Compile Include="Contabilidad\EEFFItemForAD.cs" />
+    <Compile Include="Contabilidad\EEFFItemHistoricoAD.cs" />
+    <Compile Include="Contabilidad\EEFFItemXlsAD.cs" />
+    <Compile Include="Contabilidad\EEFFRatiosAD.cs" />
+    <Compile Include="Contabilidad\EmpresaConcarAD.cs" />
+    <Compile Include="Contabilidad\ErrorImportacionAD.cs" />
+    <Compile Include="Contabilidad\ErrorImportGeneralAD.cs" />
+    <Compile Include="Contabilidad\FlujoDeCajaAD.cs" />
+    <Compile Include="Contabilidad\ImportacionRVentasAD.cs" />
+    <Compile Include="Contabilidad\InventarioBalance21AD.cs" />
+    <Compile Include="Contabilidad\InventarioBalanceAD.cs" />
+    <Compile Include="Contabilidad\InventarioBalanceCta14AD.cs" />
+    <Compile Include="Contabilidad\LibroConcarAD.cs" />
+    <Compile Include="Contabilidad\ParametrosContaAD.cs" />
+    <Compile Include="Contabilidad\PeriodosAD.cs" />
+    <Compile Include="Contabilidad\PlanContableXLSAD.cs" />
+    <Compile Include="Contabilidad\PlanCuentaAD.cs" />
+    <Compile Include="Contabilidad\PlanCuentaDifCambioUsuarioAD.cs" />
+    <Compile Include="Contabilidad\PlanCuentasEstrucAD.cs" />
+    <Compile Include="Contabilidad\PlanCuentasSunatAD.cs" />
+    <Compile Include="Contabilidad\PlanCuentasVersionAD.cs" />
+    <Compile Include="Contabilidad\PlantillaAsientoAD.cs" />
+    <Compile Include="Contabilidad\PlantillaAsientoDetAD.cs" />
+    <Compile Include="Contabilidad\PresupuestoAD.cs" />
+    <Compile Include="Contabilidad\PresupuestoDetAD.cs" />
+    <Compile Include="Contabilidad\PublicidadAD.cs" />
+    <Compile Include="Contabilidad\ReciboHonorariosAD.cs" />
+    <Compile Include="Contabilidad\ReciboHonorariosDetAD.cs" />
+    <Compile Include="Contabilidad\RegistroCompras2AD.cs" />
+    <Compile Include="Contabilidad\RegistroComprasAD.cs" />
+    <Compile Include="Contabilidad\RegistroDiarioAD.cs" />
+    <Compile Include="Contabilidad\RegistroLibroMayorAD.cs" />
+    <Compile Include="Contabilidad\RegistroVentaGeneralAD.cs" />
+    <Compile Include="Contabilidad\RegistroVentasAD.cs" />
+    <Compile Include="Contabilidad\RegistroVentasDetAD.cs" />
+    <Compile Include="Contabilidad\RegVentasDetXLSAD.cs" />
+    <Compile Include="Contabilidad\ReparablesAD.cs" />
+    <Compile Include="Contabilidad\ReporteEEFFItemAD.cs" />
+    <Compile Include="Contabilidad\SaldoSegunBancoAD.cs" />
+    <Compile Include="Contabilidad\SaldosMensualesAD.cs" />
+    <Compile Include="Contabilidad\TasaIRentaAD.cs" />
+    <Compile Include="Contabilidad\VoucherAD.cs" />
+    <Compile Include="Contabilidad\VoucherEnlaceAD.cs" />
+    <Compile Include="Contabilidad\VoucherItemAD.cs" />
+    <Compile Include="Contabilidad\VoucherItemCCostosAD.cs" />
+    <Compile Include="Contabilidad\VoucherXLSAD.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasAD.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasConciliacionAD.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasItemAD.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasItemDetAD.cs" />
+    <Compile Include="CtasPorCobrar\TipoIngresosAD.cs" />
+    <Compile Include="CtasPorCobrar\TipoIngresosDetAD.cs" />
+    <Compile Include="CtasPorPagar\CanjeAD.cs" />
+    <Compile Include="CtasPorPagar\CanjeDctoItemAD.cs" />
+    <Compile Include="CtasPorPagar\LetrasItemAD.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionAD.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionDetAD.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionImportacionAD.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionImportacionDetAD.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionSaldosAD.cs" />
+    <Compile Include="CtasPorPagar\MovilidadAD.cs" />
+    <Compile Include="CtasPorPagar\MovilidadDetAD.cs" />
+    <Compile Include="CtasPorPagar\NumControlCompraAD.cs" />
+    <Compile Include="CtasPorPagar\NumControlCompraDetAD.cs" />
+    <Compile Include="CtasPorPagar\Plantilla_ConceptoAD.cs" />
+    <Compile Include="CtasPorPagar\Plantilla_Concepto_itemAD.cs" />
+    <Compile Include="CtasPorPagar\ProvisionesAD.cs" />
+    <Compile Include="CtasPorPagar\Provisiones_PorCCostoAD.cs" />
+    <Compile Include="CtasPorPagar\Provisiones_PorPartidaAD.cs" />
+    <Compile Include="CtasPorPagar\RetencionAD.cs" />
+    <Compile Include="CtasPorPagar\RetencionItemAD.cs" />
+    <Compile Include="Generales\ContactosCorreosAD.cs" />
+    <Compile Include="Generales\ContactosCorreosGrupoAD.cs" />
+    <Compile Include="Generales\ControlDetraccionesAD.cs" />
+    <Compile Include="Generales\EstructuraXLSAD.cs" />
+    <Compile Include="Generales\ImportarComprasAD.cs" />
+    <Compile Include="Generales\ImpuestosAD.cs" />
+    <Compile Include="Generales\ImpuestosDocumentosAD.cs" />
+    <Compile Include="Generales\ImpuestosPeriodoAD.cs" />
+    <Compile Include="Generales\MarcaAD.cs" />
+    <Compile Include="Generales\MonedasAD.cs" />
+    <Compile Include="Generales\PaisesAD.cs" />
+    <Compile Include="Generales\ParametroAD.cs" />
+    <Compile Include="Generales\ParTablaAD.cs" />
+    <Compile Include="Generales\SistemasAD.cs" />
+    <Compile Include="Generales\TasasDetraccionesAD.cs" />
+    <Compile Include="Generales\TasasDetraccionesDetalleAD.cs" />
+    <Compile Include="Generales\TipoCambioAD.cs" />
+    <Compile Include="Generales\UMedidaAD.cs" />
+    <Compile Include="Generales\UsuarioImpresorasAD.cs" />
+    <Compile Include="Generales\UsuarioImpresorasDetAD.cs" />
+    <Compile Include="Maestros\AfectacionIgvAD.cs" />
+    <Compile Include="Maestros\AreaAD.cs" />
+    <Compile Include="Maestros\ArticuloCatAD.cs" />
+    <Compile Include="Maestros\ArticuloDetalleAD.cs" />
+    <Compile Include="Maestros\ArticuloEstrucAD.cs" />
+    <Compile Include="Maestros\ArticuloKitAD.cs" />
+    <Compile Include="Maestros\ArticuloServAD.cs" />
+    <Compile Include="Maestros\ArticuloServSunatAD.cs" />
+    <Compile Include="Maestros\ArticuloServXLSAD.cs" />
+    <Compile Include="Maestros\BancosAD.cs" />
+    <Compile Include="Maestros\BancosCuentasAD.cs" />
+    <Compile Include="Maestros\CCostosAD.cs" />
+    <Compile Include="Maestros\CCostosNumControlDetAD.cs" />
+    <Compile Include="Maestros\ClienteAD.cs" />
+    <Compile Include="Maestros\ClienteAsociadosAD.cs" />
+    <Compile Include="Maestros\ClienteAvalAD.cs" />
+    <Compile Include="Maestros\ClienteXLSAD.cs" />
+    <Compile Include="Maestros\CostosClasificacionAD.cs" />
+    <Compile Include="Maestros\CostosEstrucAD.cs" />
+    <Compile Include="Maestros\CostosMovimientosAD.cs" />
+    <Compile Include="Maestros\CostosMovimientosItemAD.cs" />
+    <Compile Include="Maestros\DocumentosAD.cs" />
+    <Compile Include="Maestros\EmisionDocumentoCCostosAD.cs" />
+    <Compile Include="Maestros\EmpresaAD.cs" />
+    <Compile Include="Maestros\EmpresaImagenesAD.cs" />
+    <Compile Include="Maestros\EstablecimientosAD.cs" />
+    <Compile Include="Maestros\ImportacionComprasXLSAD.cs" />
+    <Compile Include="Maestros\ImpresionBarrasAD.cs" />
+    <Compile Include="Maestros\ImpresionBarrasDetAD.cs" />
+    <Compile Include="Maestros\ImpresionBarrasDetDetAD.cs" />
+    <Compile Include="Maestros\LocalAD.cs" />
+    <Compile Include="Maestros\OpeLogisticoAD.cs" />
+    <Compile Include="Maestros\PartidaPresupuestariaAD.cs" />
+    <Compile Include="Maestros\PersonaAD.cs" />
+    <Compile Include="Maestros\PersonaDireccionAD.cs" />
+    <Compile Include="Maestros\ProveedorAD.cs" />
+    <Compile Include="Maestros\ProveedorContactoAD.cs" />
+    <Compile Include="Maestros\ProveedorCuentaAD.cs" />
+    <Compile Include="Maestros\UbigeoAD.cs" />
+    <Compile Include="Maestros\VendedoresAD.cs" />
+    <Compile Include="Maestros\VendedoresCarteraAD.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\AccionAD.cs" />
+    <Compile Include="Seguridad\AsignarTipoCobranzaAD.cs" />
+    <Compile Include="Seguridad\ClonacionTablasAD.cs" />
+    <Compile Include="Seguridad\OpcionAD.cs" />
+    <Compile Include="Seguridad\PerfilAD.cs" />
+    <Compile Include="Seguridad\RolAD.cs" />
+    <Compile Include="Seguridad\RolOpcionAD.cs" />
+    <Compile Include="Seguridad\UsuarioAccionAD.cs" />
+    <Compile Include="Seguridad\UsuarioAD.cs" />
+    <Compile Include="Seguridad\UsuarioAlmacenAD.cs" />
+    <Compile Include="Seguridad\UsuarioAreasAD.cs" />
+    <Compile Include="Seguridad\UsuarioCCostosAD.cs" />
+    <Compile Include="Seguridad\UsuarioEmpresaLocalAD.cs" />
+    <Compile Include="Seguridad\UsuarioEmpresaLocalPerfilAD.cs" />
+    <Compile Include="Seguridad\UsuarioFondoFijoAD.cs" />
+    <Compile Include="Seguridad\UsuarioPlanillaAD.cs" />
+    <Compile Include="Seguridad\UsuarioPreferenciasAD.cs" />
+    <Compile Include="Seguridad\UsuarioPuntoRequeAD.cs" />
+    <Compile Include="Seguridad\UsuarioRolAD.cs" />
+    <Compile Include="Seguridad\UsuarioSeriesAD.cs" />
+    <Compile Include="Tesoreria\AnticipoCtaCteAD.cs" />
+    <Compile Include="Tesoreria\AnticipoCtaCteDetAD.cs" />
+    <Compile Include="Tesoreria\AperturaCtaCteAD.cs" />
+    <Compile Include="Tesoreria\CtaCteAD.cs" />
+    <Compile Include="Tesoreria\CtaCte_DetAD.cs" />
+    <Compile Include="Tesoreria\EgresoAD.cs" />
+    <Compile Include="Tesoreria\EgresoItemAD.cs" />
+    <Compile Include="Tesoreria\FinanciamientoAD.cs" />
+    <Compile Include="Tesoreria\FondoFijoAD.cs" />
+    <Compile Include="Tesoreria\FormaPagoAD.cs" />
+    <Compile Include="Tesoreria\FormaPagoCompFileAD.cs" />
+    <Compile Include="Tesoreria\FormaTipoPagoAD.cs" />
+    <Compile Include="Tesoreria\MovimientoBancosAD.cs" />
+    <Compile Include="Tesoreria\MovimientoBancosDetAD.cs" />
+    <Compile Include="Tesoreria\MovimientoFinanciamientoAD.cs" />
+    <Compile Include="Tesoreria\MovimientoFinanciamientoDetAD.cs" />
+    <Compile Include="Tesoreria\OrdenPagoAD.cs" />
+    <Compile Include="Tesoreria\OrdenPagoDetAD.cs" />
+    <Compile Include="Tesoreria\ProgramaPagoAD.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorAD.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorDetAD.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionAD.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionDetAD.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionTmpAD.cs" />
+    <Compile Include="Tesoreria\tesParametrosAD.cs" />
+    <Compile Include="Tesoreria\TipoLineaCreditoAD.cs" />
+    <Compile Include="Tesoreria\TipoPagoAD.cs" />
+    <Compile Include="Tesoreria\TipoPagoDetAD.cs" />
+    <Compile Include="Util\DbConection.cs" />
+    <Compile Include="Ventas\AnticiposAD.cs" />
+    <Compile Include="Ventas\CampanaAD.cs" />
+    <Compile Include="Ventas\CampanaTipoAD.cs" />
+    <Compile Include="Ventas\CancPuntoDeVentaAD.cs" />
+    <Compile Include="Ventas\CanjeGuiasAD.cs" />
+    <Compile Include="Ventas\CategoriaVendedorAD.cs" />
+    <Compile Include="Ventas\CategoriaVendedorLineaAD.cs" />
+    <Compile Include="Ventas\comisionAD.cs" />
+    <Compile Include="Ventas\ComisionesCalAD.cs" />
+    <Compile Include="Ventas\ComisionesConfiguracionAD.cs" />
+    <Compile Include="Ventas\comisionPagoAD.cs" />
+    <Compile Include="Ventas\CondicionAD.cs" />
+    <Compile Include="Ventas\CondicionDiasAD.cs" />
+    <Compile Include="Ventas\CondicionTipoAD.cs" />
+    <Compile Include="Ventas\CreditoConceptoAD.cs" />
+    <Compile Include="Ventas\EinvoiceHeaderAD.cs" />
+    <Compile Include="Ventas\EmisionDocumentoAD.cs" />
+    <Compile Include="Ventas\EmisionDocumentoCancelacionAD.cs" />
+    <Compile Include="Ventas\EmisionDocumentoDetAD.cs" />
+    <Compile Include="Ventas\EmisionDocumentoExportaAD.cs" />
+    <Compile Include="Ventas\LetrasAD.cs" />
+    <Compile Include="Ventas\LetrasCanjeAD.cs" />
+    <Compile Include="Ventas\LetrasCanjeUnionAD.cs" />
+    <Compile Include="Ventas\LetrasEstadoAD.cs" />
+    <Compile Include="Ventas\LetrasEstadoLibroFileAD.cs" />
+    <Compile Include="Ventas\LineaAD.cs" />
+    <Compile Include="Ventas\LineaCreditoAD.cs" />
+    <Compile Include="Ventas\ListaPrecioAD.cs" />
+    <Compile Include="Ventas\ListaPrecioItemAD.cs" />
+    <Compile Include="Ventas\MedioPagoAD.cs" />
+    <Compile Include="Ventas\NumControlAD.cs" />
+    <Compile Include="Ventas\NumControlDetAD.cs" />
+    <Compile Include="Ventas\OrdenTrabajoServicioAD.cs" />
+    <Compile Include="Ventas\OrdenTrabajoServicioItemAD.cs" />
+    <Compile Include="Ventas\PedidoCabAD.cs" />
+    <Compile Include="Ventas\PedidoDetAD.cs" />
+    <Compile Include="Ventas\PeriodoComisionAD.cs" />
+    <Compile Include="Ventas\PlanillaBancosAD.cs" />
+    <Compile Include="Ventas\PlanillaBancosDetAD.cs" />
+    <Compile Include="Ventas\PresupuestoDeVentasXLSAD.cs" />
+    <Compile Include="Ventas\PresupuestoVentaAD.cs" />
+    <Compile Include="Ventas\PresupuestoVentaDetAD.cs" />
+    <Compile Include="Ventas\RegistroVentasReporteAD.cs" />
+    <Compile Include="Ventas\RentabilidadAD.cs" />
+    <Compile Include="Ventas\SalesPointAD.cs" />
+    <Compile Include="Ventas\TipoTrasladoAD.cs" />
+    <Compile Include="Ventas\TransporteAD.cs" />
+    <Compile Include="Ventas\TransporteConductoresAD.cs" />
+    <Compile Include="Ventas\TransporteVehiculosAD.cs" />
+    <Compile Include="Ventas\venParametrosAD.cs" />
+    <Compile Include="Ventas\ZonaTrabajoAD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{323c1332-97a9-4f0f-8dc3-646c7aaae3ba}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
+      <Project>{d13a126e-5572-4848-841a-0dfbe944ad4f}</Project>
+      <Name>Infraestructura</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Procedimiento Modificados\retail.usp_ActualizarCliente.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_BuscarCLiente.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_EliminarPedidoCabNacional.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_InsertarCliente.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_ObtenerStockActual.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_RecuperarClientePorId.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_ListarPersonasPorFiltro.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_ObtenerNroPedido.sql" />
+    <Content Include="Procedimiento Modificados\retail.usp_RecuperarPedidoCabNacional.sql" />
+    <Content Include="Tablas Modificadas\usp_ActualizarPedidoCabNacional %28DBO a RETAIL%29.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

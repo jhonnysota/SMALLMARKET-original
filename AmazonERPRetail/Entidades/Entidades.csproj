@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{323C1332-97A9-4F0F-8DC3-646C7AAAE3BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\AlmacenArticuloLoteE.cs" />
+    <Compile Include="Almacen\AlmacenE.cs" />
+    <Compile Include="Almacen\ArticuloPrecioE.cs" />
+    <Compile Include="Almacen\ConceptosVariosE.cs" />
+    <Compile Include="Almacen\CorrelativoE.cs" />
+    <Compile Include="Almacen\GastosImportacionE.cs" />
+    <Compile Include="Almacen\HojaCostoAlmacenE.cs" />
+    <Compile Include="Almacen\HojaCostoE.cs" />
+    <Compile Include="Almacen\HojaCostoItemE.cs" />
+    <Compile Include="Almacen\HojaCostoOCE.cs" />
+    <Compile Include="Almacen\kardexE.cs" />
+    <Compile Include="Almacen\KardexValorizadoE.cs" />
+    <Compile Include="Almacen\kardexXLSE.cs" />
+    <Compile Include="Almacen\LoteE.cs" />
+    <Compile Include="Almacen\MovimientoAlmacenE.cs" />
+    <Compile Include="Almacen\MovimientoAlmacenItemE.cs" />
+    <Compile Include="Almacen\OperacionE.cs" />
+    <Compile Include="Almacen\OrdenCompraDistriE.cs" />
+    <Compile Include="Almacen\OrdenCompraE.cs" />
+    <Compile Include="Almacen\OrdenCompraItemE.cs" />
+    <Compile Include="Almacen\OrdenCompraParametrosE.cs" />
+    <Compile Include="Almacen\OrdenConversionDetalleE.cs" />
+    <Compile Include="Almacen\OrdenConversionE.cs" />
+    <Compile Include="Almacen\OrdenConversionGastosE.cs" />
+    <Compile Include="Almacen\OrdenConversionSalidaE.cs" />
+    <Compile Include="Almacen\PeriodosAlmE.cs" />
+    <Compile Include="Almacen\ProcesoValorizaciondeAlmacenE.cs" />
+    <Compile Include="Almacen\RequerimientoPuntosE.cs" />
+    <Compile Include="Almacen\RequerimientosE.cs" />
+    <Compile Include="Almacen\RequerimientosItemE.cs" />
+    <Compile Include="Almacen\RequisicionE.cs" />
+    <Compile Include="Almacen\RequisicionItemE.cs" />
+    <Compile Include="Almacen\RequisicionProveedorE.cs" />
+    <Compile Include="Almacen\StockE.cs" />
+    <Compile Include="Contabilidad\ActivacionDetE.cs" />
+    <Compile Include="Contabilidad\ActivacionE.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionE.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionSunatE.cs" />
+    <Compile Include="Contabilidad\BalanceComprobacionXLSE.cs" />
+    <Compile Include="Contabilidad\BancosConciliarE.cs" />
+    <Compile Include="Contabilidad\CierreAlmacenE.cs" />
+    <Compile Include="Contabilidad\CierreSistemaE.cs" />
+    <Compile Include="Contabilidad\ComprasFileE.cs" />
+    <Compile Include="Contabilidad\ComprasVariasE.cs" />
+    <Compile Include="Contabilidad\ComprobantesE.cs" />
+    <Compile Include="Contabilidad\ComprobantesFileE.cs" />
+    <Compile Include="Contabilidad\ConceptoGastoE.cs" />
+    <Compile Include="Contabilidad\ConciliadoDcmtoPendienteE.cs" />
+    <Compile Include="Contabilidad\conCtaCteE.cs" />
+    <Compile Include="Contabilidad\conCtaCteE14.cs" />
+    <Compile Include="Contabilidad\conCtaCteItemE.cs" />
+    <Compile Include="Contabilidad\ConsistenciaVoucherE.cs" />
+    <Compile Include="Contabilidad\Con_SaldosCostosE.cs" />
+    <Compile Include="Contabilidad\Con_SaldosE.cs" />
+    <Compile Include="Contabilidad\CostoVentaE.cs" />
+    <Compile Include="Contabilidad\CuentaCCostoE.cs" />
+    <Compile Include="Contabilidad\CuentasMigracionE.cs" />
+    <Compile Include="Contabilidad\CuentaTasaRentaE.cs" />
+    <Compile Include="Contabilidad\DatosAuditoriaE.cs" />
+    <Compile Include="Contabilidad\DifCambioE.cs" />
+    <Compile Include="Contabilidad\EEFFE.cs" />
+    <Compile Include="Contabilidad\EEFFELIST.cs" />
+    <Compile Include="Contabilidad\EEFFItemCtaE.cs" />
+    <Compile Include="Contabilidad\EEFFItemE.cs" />
+    <Compile Include="Contabilidad\EEFFItemForE.cs" />
+    <Compile Include="Contabilidad\EEFFItemHistoricoE.cs" />
+    <Compile Include="Contabilidad\EEFFItemXlsE.cs" />
+    <Compile Include="Contabilidad\EEFFRatiosE.cs" />
+    <Compile Include="Contabilidad\EmpresaConcarE.cs" />
+    <Compile Include="Contabilidad\ErrorImportacionE.cs" />
+    <Compile Include="Contabilidad\ErrorImportGeneralE.cs" />
+    <Compile Include="Contabilidad\FlujoDeCajaE.cs" />
+    <Compile Include="Contabilidad\ImportacionRVentasE.cs" />
+    <Compile Include="Contabilidad\InventarioBalanceCteE21.cs" />
+    <Compile Include="Contabilidad\InventarioBalanceE.cs" />
+    <Compile Include="Contabilidad\LibroConcarE.cs" />
+    <Compile Include="Contabilidad\ParametrosContaE.cs" />
+    <Compile Include="Contabilidad\PeriodosE.cs" />
+    <Compile Include="Contabilidad\PlanContableXLSE.cs" />
+    <Compile Include="Contabilidad\PlanCuentasDifCambioUsuarioE.cs" />
+    <Compile Include="Contabilidad\PlanCuentasE.cs" />
+    <Compile Include="Contabilidad\PlanCuentasE21.cs" />
+    <Compile Include="Contabilidad\PlanCuentasEstrucE.cs" />
+    <Compile Include="Contabilidad\PlanCuentasSunatE.cs" />
+    <Compile Include="Contabilidad\PlanCuentasVersionE.cs" />
+    <Compile Include="Contabilidad\PlantillaAsientoDetE.cs" />
+    <Compile Include="Contabilidad\PlantillaAsientoE.cs" />
+    <Compile Include="Contabilidad\PresupuestoDetE.cs" />
+    <Compile Include="Contabilidad\PresupuestoE.cs" />
+    <Compile Include="Contabilidad\PublicidadE.cs" />
+    <Compile Include="Contabilidad\ReciboHonorariosDetE.cs" />
+    <Compile Include="Contabilidad\ReciboHonorariosE.cs" />
+    <Compile Include="Contabilidad\RegistroCompras2E.cs" />
+    <Compile Include="Contabilidad\RegistroComprasE.cs" />
+    <Compile Include="Contabilidad\RegistroDiarioE.cs" />
+    <Compile Include="Contabilidad\RegistroLibroMayorE.cs" />
+    <Compile Include="Contabilidad\RegistroVentasDetE.cs" />
+    <Compile Include="Contabilidad\RegistroVentasE.cs" />
+    <Compile Include="Contabilidad\RegistroVentasGeneralE.cs" />
+    <Compile Include="Contabilidad\RegVentasDetXLSE.cs" />
+    <Compile Include="Contabilidad\ReparablesE.cs" />
+    <Compile Include="Contabilidad\ReporteEEFFItemE.cs" />
+    <Compile Include="Contabilidad\SaldoSegunBancoE.cs" />
+    <Compile Include="Contabilidad\SaldosMensualesE.cs" />
+    <Compile Include="Contabilidad\TasaIRentaE.cs" />
+    <Compile Include="Contabilidad\VoucherE.cs" />
+    <Compile Include="Contabilidad\VoucherEnlaceE.cs" />
+    <Compile Include="Contabilidad\VoucherItemCCostosE.cs" />
+    <Compile Include="Contabilidad\VoucherItemE.cs" />
+    <Compile Include="Contabilidad\VoucherXLSE.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasConciliacionE.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasE.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasItemDetE.cs" />
+    <Compile Include="CtasPorCobrar\CobranzasItemE.cs" />
+    <Compile Include="CtasPorCobrar\TipoIngresosDetE.cs" />
+    <Compile Include="CtasPorCobrar\TipoIngresosE.cs" />
+    <Compile Include="CtasPorPagar\CanjeDctoItemE.cs" />
+    <Compile Include="CtasPorPagar\CanjeE.cs" />
+    <Compile Include="CtasPorPagar\EgresoE.cs" />
+    <Compile Include="CtasPorPagar\EgresoItemE.cs" />
+    <Compile Include="CtasPorPagar\LetrasItemE.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionDetE.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionE.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionImportacionDetE.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionImportacionE.cs" />
+    <Compile Include="CtasPorPagar\LiquidacionSaldosE.cs" />
+    <Compile Include="CtasPorPagar\MovilidadDetE.cs" />
+    <Compile Include="CtasPorPagar\MovilidadE.cs" />
+    <Compile Include="CtasPorPagar\NumControlCompraDetE.cs" />
+    <Compile Include="CtasPorPagar\NumControlCompraE.cs" />
+    <Compile Include="CtasPorPagar\Plantilla_ConceptoE.cs" />
+    <Compile Include="CtasPorPagar\Plantilla_Concepto_itemE.cs" />
+    <Compile Include="CtasPorPagar\ProvisionesE.cs" />
+    <Compile Include="CtasPorPagar\Provisiones_PorCCostoE.cs" />
+    <Compile Include="CtasPorPagar\Provisiones_PorPartidaE.cs" />
+    <Compile Include="CtasPorPagar\RetencionE.cs" />
+    <Compile Include="CtasPorPagar\RetencionItemE.cs" />
+    <Compile Include="Generales\ContactosCorreosE.cs" />
+    <Compile Include="Generales\ContactosCorreosGrupoE.cs" />
+    <Compile Include="Generales\ControlDetraccionesE.cs" />
+    <Compile Include="Generales\EstructuraXLSE.cs" />
+    <Compile Include="Generales\ImpuestosDocumentosE.cs" />
+    <Compile Include="Generales\ImpuestosE.cs" />
+    <Compile Include="Generales\ImpuestosPeriodoE.cs" />
+    <Compile Include="Generales\Marca.cs" />
+    <Compile Include="Generales\MonedasE.cs" />
+    <Compile Include="Generales\PaisesE.cs" />
+    <Compile Include="Generales\ParametroE.cs" />
+    <Compile Include="Generales\ParTabla.cs" />
+    <Compile Include="Generales\SistemasE.cs" />
+    <Compile Include="Generales\TasasDetraccionesDetalleE.cs" />
+    <Compile Include="Generales\TasasDetraccionesE.cs" />
+    <Compile Include="Generales\TipoCambioE.cs" />
+    <Compile Include="Generales\UMedidaE.cs" />
+    <Compile Include="Generales\UsuarioImpresorasDetE.cs" />
+    <Compile Include="Generales\UsuarioImpresorasE.cs" />
+    <Compile Include="Maestros\AfectacionIgvE.cs" />
+    <Compile Include="Maestros\Area.cs" />
+    <Compile Include="Maestros\ArticuloCatE.cs" />
+    <Compile Include="Maestros\ArticuloDetalleE.cs" />
+    <Compile Include="Maestros\ArticuloEstrucE.cs" />
+    <Compile Include="Maestros\ArticuloKitE.cs" />
+    <Compile Include="Maestros\ArticuloServE.cs" />
+    <Compile Include="Maestros\ArticuloServSunatE.cs" />
+    <Compile Include="Maestros\ArticuloServXLSE.cs" />
+    <Compile Include="Maestros\BancosCuentasE.cs" />
+    <Compile Include="Maestros\BancosE.cs" />
+    <Compile Include="Maestros\CCostosE.cs" />
+    <Compile Include="Maestros\CCostosNumControlDetE.cs" />
+    <Compile Include="Maestros\ClienteAsociadosE.cs" />
+    <Compile Include="Maestros\ClienteAvalE.cs" />
+    <Compile Include="Maestros\ClienteE.cs" />
+    <Compile Include="Maestros\ClienteXLSE.cs" />
+    <Compile Include="Maestros\CostosClasificacionE.cs" />
+    <Compile Include="Maestros\CostosEstrucE.cs" />
+    <Compile Include="Maestros\CostosMovimientosE.cs" />
+    <Compile Include="Maestros\CostosMovimientosItemE.cs" />
+    <Compile Include="Maestros\DocumentosE.cs" />
+    <Compile Include="Maestros\EmisionDocumentoCCostosE.cs" />
+    <Compile Include="Maestros\Empresa.cs" />
+    <Compile Include="Maestros\EmpresaImagenesE.cs" />
+    <Compile Include="Maestros\EstablecimientosE.cs" />
+    <Compile Include="Maestros\ImportacionComprasXLSE.cs" />
+    <Compile Include="Maestros\ImpresionBarrasDetDetE.cs" />
+    <Compile Include="Maestros\ImpresionBarrasDetE.cs" />
+    <Compile Include="Maestros\ImpresionBarrasE.cs" />
+    <Compile Include="Maestros\LocalE.cs" />
+    <Compile Include="Maestros\OpeLogisticoE.cs" />
+    <Compile Include="Maestros\PartidaPresupuestariaE.cs" />
+    <Compile Include="Maestros\Persona.cs" />
+    <Compile Include="Maestros\PersonaDireccionE.cs" />
+    <Compile Include="Maestros\PersonaXLSE.cs" />
+    <Compile Include="Maestros\ProveedorContactoE.cs" />
+    <Compile Include="Maestros\ProveedorCuentaE.cs" />
+    <Compile Include="Maestros\ProveedorE.cs" />
+    <Compile Include="Maestros\TrabajadorE.cs" />
+    <Compile Include="Maestros\UbigeoE.cs" />
+    <Compile Include="Maestros\VendedoresCarteraE.cs" />
+    <Compile Include="Maestros\VendedoresE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\AccionE.cs" />
+    <Compile Include="Seguridad\AsignarTipoCobranzaE.cs" />
+    <Compile Include="Seguridad\ClonacionTablasE.cs" />
+    <Compile Include="Seguridad\Opcion.cs" />
+    <Compile Include="Seguridad\Perfil.cs" />
+    <Compile Include="Seguridad\Rol.cs" />
+    <Compile Include="Seguridad\RolOpcion.cs" />
+    <Compile Include="Seguridad\Usuario.cs" />
+    <Compile Include="Seguridad\UsuarioAccionE.cs" />
+    <Compile Include="Seguridad\UsuarioAlmacenE.cs" />
+    <Compile Include="Seguridad\UsuarioAreasE.cs" />
+    <Compile Include="Seguridad\UsuarioCCostosE.cs" />
+    <Compile Include="Seguridad\UsuarioEmpresaLocal.cs" />
+    <Compile Include="Seguridad\UsuarioEmpresaLocalPerfil.cs" />
+    <Compile Include="Seguridad\UsuarioFondoFijoE.cs" />
+    <Compile Include="Seguridad\UsuarioPlanillaE.cs" />
+    <Compile Include="Seguridad\UsuarioPreferenciasE.cs" />
+    <Compile Include="Seguridad\UsuarioPuntoRequeE.cs" />
+    <Compile Include="Seguridad\UsuarioRol.cs" />
+    <Compile Include="Seguridad\UsuarioSeriesE.cs" />
+    <Compile Include="Tesoreria\AnticipoCtaCteDetE.cs" />
+    <Compile Include="Tesoreria\AnticipoCtaCteE.cs" />
+    <Compile Include="Tesoreria\AperturaCtaCteE.cs" />
+    <Compile Include="Tesoreria\CtaCteE.cs" />
+    <Compile Include="Tesoreria\CtaCte_DetE.cs" />
+    <Compile Include="Tesoreria\FinanciamientoE.cs" />
+    <Compile Include="Tesoreria\FondoFijoE.cs" />
+    <Compile Include="Tesoreria\FormaPagoCompFileE.cs" />
+    <Compile Include="Tesoreria\FormaPagoE.cs" />
+    <Compile Include="Tesoreria\FormaTipoPagoE.cs" />
+    <Compile Include="Tesoreria\MovimientoBancosDetE.cs" />
+    <Compile Include="Tesoreria\MovimientoBancosE.cs" />
+    <Compile Include="Tesoreria\MovimientoFinanciamientoDetE.cs" />
+    <Compile Include="Tesoreria\MovimientoFinanciamientoE.cs" />
+    <Compile Include="Tesoreria\OrdenPagoDetE.cs" />
+    <Compile Include="Tesoreria\OrdenPagoE.cs" />
+    <Compile Include="Tesoreria\ProgramaPagoE.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorDetE.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorE.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionDetE.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionE.cs" />
+    <Compile Include="Tesoreria\SolicitudProveedorRendicionTmpE.cs" />
+    <Compile Include="Tesoreria\tesParametrosE.cs" />
+    <Compile Include="Tesoreria\TipoLineaCreditoE.cs" />
+    <Compile Include="Tesoreria\TipoPagoDetE.cs" />
+    <Compile Include="Tesoreria\TipoPagoE.cs" />
+    <Compile Include="Ventas\AnticiposE.cs" />
+    <Compile Include="Ventas\CampanaE.cs" />
+    <Compile Include="Ventas\CampanaTipoE.cs" />
+    <Compile Include="Ventas\CancPuntoDeVentaE.cs" />
+    <Compile Include="Ventas\CanjeGuiasE.cs" />
+    <Compile Include="Ventas\CartaCategoriaE.cs" />
+    <Compile Include="Ventas\CartaE.cs" />
+    <Compile Include="Ventas\CartaEstrucE.cs" />
+    <Compile Include="Ventas\CartaProductoDetE.cs" />
+    <Compile Include="Ventas\CategoriaVendedorE.cs" />
+    <Compile Include="Ventas\CategoriaVendedorLineaE.cs" />
+    <Compile Include="Ventas\comisionE.cs" />
+    <Compile Include="Ventas\ComisionesCalE.cs" />
+    <Compile Include="Ventas\ComisionesConfiguracionE.cs" />
+    <Compile Include="Ventas\comisionPagoE.cs" />
+    <Compile Include="Ventas\CondicionDiasE.cs" />
+    <Compile Include="Ventas\CondicionE.cs" />
+    <Compile Include="Ventas\CondicionTipoE.cs" />
+    <Compile Include="Ventas\CreditoConceptoE.cs" />
+    <Compile Include="Ventas\EinvoiceHeaderE.cs" />
+    <Compile Include="Ventas\EmisionDocumentoCancelacionE.cs" />
+    <Compile Include="Ventas\EmisionDocumentoDetE.cs" />
+    <Compile Include="Ventas\EmisionDocumentoE.cs" />
+    <Compile Include="Ventas\EmisionDocumentoExportaE.cs" />
+    <Compile Include="Ventas\LetrasCanjeE.cs" />
+    <Compile Include="Ventas\LetrasCanjeUnionE.cs" />
+    <Compile Include="Ventas\LetrasE.cs" />
+    <Compile Include="Ventas\LetrasEstadoE.cs" />
+    <Compile Include="Ventas\LetrasEstadoLibroFileE.cs" />
+    <Compile Include="Ventas\LineaCreditoE.cs" />
+    <Compile Include="Ventas\LineaE.cs" />
+    <Compile Include="Ventas\ListaPrecioE.cs" />
+    <Compile Include="Ventas\ListaPrecioItemE.cs" />
+    <Compile Include="Ventas\MedioPagoE.cs" />
+    <Compile Include="Ventas\NumControlDetE.cs" />
+    <Compile Include="Ventas\NumControlE.cs" />
+    <Compile Include="Ventas\OrdenTrabajoServicioE.cs" />
+    <Compile Include="Ventas\OrdenTrabajoServicioItemE.cs" />
+    <Compile Include="Ventas\PedidoCabE.cs" />
+    <Compile Include="Ventas\PedidoDetE.cs" />
+    <Compile Include="Ventas\PeriodoComisionE.cs" />
+    <Compile Include="Ventas\PlanillaBancosDetE.cs" />
+    <Compile Include="Ventas\PlanillaBancosE.cs" />
+    <Compile Include="Ventas\PresupuestoDeVentasXLSE.cs" />
+    <Compile Include="Ventas\PresupuestoVentaDetE.cs" />
+    <Compile Include="Ventas\PresupuestoVentaE.cs" />
+    <Compile Include="Ventas\RegistroVentasReporteE.cs" />
+    <Compile Include="Ventas\RentabilidadE.cs" />
+    <Compile Include="Ventas\SalesPointE.cs" />
+    <Compile Include="Ventas\SemanaE.cs" />
+    <Compile Include="Ventas\TipoTrasladoE.cs" />
+    <Compile Include="Ventas\TransporteConductoresE.cs" />
+    <Compile Include="Ventas\TransporteE.cs" />
+    <Compile Include="Ventas\TransporteVehiculosE.cs" />
+    <Compile Include="Ventas\venParametrosE.cs" />
+    <Compile Include="Ventas\VentasE.cs" />
+    <Compile Include="Ventas\ZonaTrabajoE.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
